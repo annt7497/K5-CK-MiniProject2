@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự Án Cuối Kì - Giảm Thiểu Tiếng Ồn</title>
+    <!-- Tải Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Thiết lập font chữ dễ đọc cho học sinh tiểu học */
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f0f9ff; /* Màu xanh da trời nhạt */
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .step-icon {
+            /* Hiệu ứng nổi cho icon */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+        }
+        /* Style cho bảng đánh giá */
+        .rubric-header {
+            background-color: #3b82f6; /* Blue 500 */
+            color: white;
+            font-weight: bold;
+            padding: 0.75rem 0.5rem;
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+        }
+        .rubric-cell {
+            padding: 0.5rem;
+            border-bottom: 1px solid #e5e7eb; /* Gray 200 */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden p-6 md:p-10">
+
+        <!-- HEADER DỰ ÁN -->
+        <header class="text-center mb-10 border-b-4 border-yellow-400 pb-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-2">
+                MINI PROJECT: GIẢM THIỂU Ô NHIỄM TIẾNG ỒN
+            </h1>
+            <p class="text-xl md:text-2xl text-green-600 font-semibold">
+                Môn: TIN HỌC - KHỐI 5 | Thời gian: 4 Tiết
+            </p>
+        </header>
+
+        <!-- BỐI CẢNH DỰ ÁN -->
+        <section class="mb-12 bg-indigo-50 p-6 rounded-2xl shadow-inner border-l-4 border-indigo-500">
+            <h2 class="text-3xl font-bold text-indigo-700 mb-4 flex items-center">
+                <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-7-9a1 1 0 000 2h14a1 1 0 100-2H3z" clip-rule="evenodd"></path></svg>
+                Bối Cảnh Dự Án: "Nhà Ăn Yên Bình"
+            </h2>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Các em có bao giờ cảm thấy đau đầu hay phải hét lên để nói chuyện với bạn trong giờ ăn trưa không? Tiếng bát đĩa va chạm, tiếng nói chuyện quá lớn tạo nên <strong>"Ô nhiễm tiếng ồn"</strong> . Điều này làm chúng ta ăn không ngon miệng và mệt mỏi!
+            </p>
+            <p class="text-gray-700 text-lg leading-relaxed mt-2 font-medium">
+                Nhiệm vụ của chúng ta là <strong>cùng trợ lý AI tìm ra giải pháp</strong> để trả lại sự yên bình cho nhà ăn.
+            </p>
+        </section>
+
+        <!-- MỤC TIÊU VÀ NĂNG LỰC CẦN ĐẠT -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            
+            <!-- MỤC TIÊU ĐÁNH GIÁ -->
+            <div class="bg-red-100 p-6 rounded-2xl border-2 border-red-300 card">
+                <h3 class="text-2xl font-bold text-red-700 mb-4 flex items-center">
+                    <span class="step-icon bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-extrabold">★</span>
+                    Mục Tiêu
+                </h3>
+                <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                    <li><strong>Phân tích vấn đề:</strong> 🔍 Xác định nguyên nhân gây ồn (do con người hay do đồ vật?).</li>
+                    <li><strong>Tư duy AI:</strong> 🤖 Mô tả cách một giải pháp AI hoạt động (Ví dụ: AI nhận diện tiếng ồn như thế nào? Khi nào thì cảnh báo?).</li>
+                    <li><strong>Đánh giá:</strong> ✅ Đưa ra tiêu chí để đánh giá giải pháp AI có tốt và khả thi không.</li>
+                    <li><strong>Đạo đức số:</strong> ✍️ Biết cách trích dẫn nguồn khi dùng thông tin từ Chatbot.</li>
+                </ul>
+            </div>
+
+            <!-- CÔNG CỤ & NĂNG LỰC -->
+            <div class="bg-teal-100 p-6 rounded-2xl border-2 border-teal-300 card">
+                <h3 class="text-2xl font-bold text-teal-700 mb-4 flex items-center">
+                    <span class="step-icon bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 font-extrabold">⚙️</span>
+                    Công Cụ & Năng Lực
+                </h3>
+                <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                    <li class="font-semibold">Công cụ:</li>
+                    <ul class="list-circle ml-5 text-sm italic">
+                        <li>Trợ lý ảo (Chatbot: ChatGPT, Gemini...) 💬 để tra cứu.</li>
+                        <li>Giấy A3, bút màu, hoặc phần mềm thiết kế (Canva/PPT) 🎨.</li>
+                    </ul>
+                    <li class="mt-2 font-semibold">Năng lực:</li>
+                    <ul class="list-circle ml-5 text-sm">
+                        <li>Phân tích & Xác định bài toán.</li>
+                        <li>Ứng dụng AI trong Sáng tạo nội dung.</li>
+                        <li>Đánh giá giải pháp & Tư duy thiết kế.</li>
+                        <li>Tư duy hệ thống & Đạo đức số.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- BẢNG TIÊU CHÍ ĐÁNH GIÁ CHI TIẾT -->
+        <section class="mb-12">
+            <h2 class="text-4xl font-bold text-center text-red-600 mb-6 flex items-center justify-center">
+                <span class="mr-3">🏆</span> TIÊU CHÍ ĐÁNH GIÁ CHI TIẾT
+            </h2>
+            <div class="overflow-x-auto shadow-lg rounded-xl border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="rubric-header sticky left-0 bg-blue-600 w-1/5 md:w-auto">TIÊU CHÍ</th>
+                            <th class="rubric-header bg-red-500 w-1/4 md:w-auto">MỨC 1 (Chưa đạt)</th>
+                            <th class="rubric-header bg-yellow-500 w-1/4 md:w-auto">MỨC 2 (Đang hình thành)</th>
+                            <th class="rubric-header bg-green-500 w-1/4 md:w-auto">MỨC 3 (Đạt)</th>
+                            <th class="rubric-header bg-indigo-500 w-1/4 md:w-auto">MỨC 4 (Vượt)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200 text-sm md:text-base">
+                        <!-- Hàng 1: Xác định vấn đề và viết user story -->
+                        <tr>
+                            <td class="rubric-cell font-bold bg-gray-50 sticky left-0">1. Xác định vấn đề và viết User Story</td>
+                            <td class="rubric-cell text-red-800">HS nêu vấn đề mơ hồ, chưa cụ thể. HS viết user story sai cấu trúc hoặc thiếu thông tin.</td>
+                            <td class="rubric-cell text-yellow-800">HS viết được user story nhưng còn thiếu rõ ràng về người dùng hoặc nhu cầu.</td>
+                            <td class="rubric-cell text-green-800">HS viết được user story đúng cấu trúc, thể hiện rõ người dùng – nhu cầu – mục tiêu.</td>
+                            <td class="rubric-cell text-indigo-800 font-semibold">HS viết được user story thuyết phục, logic, thể hiện góc nhìn sâu sắc và hiểu biết rộng hơn về vấn đề.</td>
+                        </tr>
+
+                        <!-- Hàng 2: Tạo sản phẩm trung gian bằng AI -->
+                        <tr>
+                            <td class="rubric-cell font-bold bg-gray-50 sticky left-0">2. Tạo sản phẩm trung gian bằng AI (poster/mô hình)</td>
+                            <td class="rubric-cell text-red-800">HS tạo sản phẩm chưa thể hiện được việc sử dụng AI hoặc sản phẩm có nhiều lỗi.</td>
+                            <td class="rubric-cell text-yellow-800">HS tạo được sản phẩm AI đơn giản, đáp ứng một phần yêu cầu.</td>
+                            <td class="rubric-cell text-green-800">HS tạo được sản phẩm AI hoàn chỉnh đúng mục tiêu.</td>
+                            <td class="rubric-cell text-indigo-800 font-semibold">HS tạo được sản phẩm AI sáng tạo, thể hiện ý tưởng độc đáo và rõ ràng.</td>
+                        </tr>
+
+                        <!-- Hàng 3: Mô tả và Đánh giá giải pháp AI (Tiết 3) -->
+                        <tr>
+                            <td class="rubric-cell font-bold bg-gray-50 sticky left-0">3. Mô tả & Đánh giá giải pháp AI (Tiết 3)</td>
+                            <td class="rubric-cell text-red-800">HS không tự đánh giá được giải pháp theo các tiêu chí thiết kế và nhu cầu người dùng đã xác định.</td>
+                            <td class="rubric-cell text-yellow-800">HS tự đánh giá được giải pháp theo các tiêu chí thiết kế và nhu cầu người dùng đã xác định nhưng lý do chưa rõ ràng.</td>
+                            <td class="rubric-cell text-green-800">HS tự đánh giá được giải pháp theo các tiêu chí thiết kế và nhu cầu người dùng đã xác định và nêu được lý do.</td>
+                            <td class="rubric-cell text-indigo-800 font-semibold">HS tự đánh giá được giải pháp theo các tiêu chí thiết kế và nhu cầu người dùng đã xác định và nêu được lý do rõ ràng và thuyết phục.</td>
+                        </tr>
+
+                        <!-- Hàng 4: Đánh giá vai trò của AI -->
+                        <tr>
+                            <td class="rubric-cell font-bold bg-gray-50 sticky left-0">4. Đánh giá vai trò của AI trong sản phẩm</td>
+                            <td class="rubric-cell text-red-800">HS không nêu được vai trò của AI.</td>
+                            <td class="rubric-cell text-yellow-800">HS mô tả được vai trò AI ở mức chung chung.</td>
+                            <td class="rubric-cell text-green-800">HS giải thích được AI hỗ trợ phần nào, nội dung nào trong sản phẩm.</td>
+                            <td class="rubric-cell text-indigo-800 font-semibold">HS phân tích được rõ ràng vai trò AI trong từng nhiệm vụ; trình bày bằng bảng so sánh hoặc sơ đồ.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <!-- CÁC TRẠM DỪNG CHÂN (4 TIẾT HỌC) -->
+        <section class="mb-10">
+            <h2 class="text-4xl font-bold text-center text-orange-600 mb-8">
+                HÀNH TRÌNH 4 TIẾT <span class="font-extrabold">MINI PROJECT</span>
+            </h2>
+            <div class="space-y-6">
+
+                <!-- TIẾT 1: Tìm nguyên nhân -->
+                <div id="tiet-1" class="bg-yellow-50 p-6 rounded-2xl border-b-4 border-yellow-500 card">
+                    <div class="flex items-start">
+                        <span class="step-icon bg-yellow-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">1️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-yellow-700">Trạm 1: TÌM NGUYÊN NHÂN (Tiết 1)</h3>
+                            <p class="text-lg font-medium text-gray-600 mt-1">Mục tiêu: Tìm ra "thủ phạm" gây ồn. 🕵️</p>
+                            <ul class="list-inside list-disc mt-3 space-y-1 text-gray-700">
+                                <li><strong>Quan sát:</strong> 👂 Liệt kê các nguồn gây ồn trong nhà ăn (nhớ lại).</li>
+                                <li><strong>Hỏi AI:</strong> 🗣️ Dùng Chatbot hỏi: *Tiếng ồn trong nhà ăn ảnh hưởng thế nào đến sức khỏe học sinh lớp 5?* .</li>
+                                <li><strong>Kết luận:</strong> ✏️ Viết vấn đề chính cần giải quyết.</li>
+                            </ul>
+                            <button onclick="toggleJournal('journal-1')" class="mt-4 text-sm font-semibold text-blue-500 hover:text-blue-700">
+                                Ghi Chú Cá Nhân 📝
+                            </button>
+                            <textarea id="journal-1" class="hidden w-full p-2 mt-2 border-2 border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 text-sm" rows="3" placeholder="Ghi lại nguyên nhân em tìm được và câu trả lời của AI..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIẾT 2: Sáng tạo giải pháp -->
+                <div id="tiet-2" class="bg-green-50 p-6 rounded-2xl border-b-4 border-green-500 card">
+                    <div class="flex items-start">
+                        <span class="step-icon bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">2️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-green-700">Trạm 2: SÁNG TẠO GIẢI PHÁP (Tiết 2)</h3>
+                            <p class="text-lg font-medium text-gray-600 mt-1">Mục tiêu: Tạo ra sản phẩm giảm tiếng ồn. 💡</p>
+                            <ul class="list-inside list-disc mt-3 space-y-1 text-gray-700">
+                                <li><strong>Hỏi AI:</strong> 💬 Hỏi Chatbot gợi ý giải pháp (Ví dụ: Poster, đèn giao thông báo ồn, vật liệu cách âm). </li>
+                                <li><strong>Chọn & Thực hiện:</strong> 🎨 Chọn 1 ý tưởng hay nhất và bắt đầu tạo sản phẩm (Vẽ poster hoặc làm mô hình).</li>
+                            </ul>
+                            <button onclick="toggleJournal('journal-2')" class="mt-4 text-sm font-semibold text-blue-500 hover:text-blue-700">
+                                Ghi Chú Cá Nhân 📝
+                            </button>
+                            <textarea id="journal-2" class="hidden w-full p-2 mt-2 border-2 border-green-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-sm" rows="3" placeholder="Ý tưởng nhóm em chọn là gì? Khó khăn khi làm sản phẩm là gì?"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIẾT 3: Huấn luyện viên AI -->
+                <div id="tiet-3" class="bg-blue-50 p-6 rounded-2xl border-b-4 border-blue-500 card">
+                    <div class="flex items-start">
+                        <span class="step-icon bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">3️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-blue-700">Trạm 3: HUẤN LUYỆN VIÊN AI (Tiết 3)</h3>
+                            <p class="text-lg font-medium text-gray-600 mt-1">Mục tiêu: Mô tả logic AI và tiêu chí đánh giá. 🧠</p>
+                            <ul class="list-inside list-disc mt-3 space-y-1 text-gray-700">
+                                <li><strong>Mô tả Logic (QUAN TRỌNG):</strong> 🤖 Viết cách AI hoạt động theo cấu trúc <strong>"Nếu... Thì..."</strong> (Ví dụ: Nếu tiếng ồn vượt quá mức X, AI sẽ bật đèn đỏ). </li>
+                                <li><strong>Xây dựng tiêu chí:</strong> ✅ Đánh giá giải pháp của nhóm: Có tốn kém không? Có dễ làm/áp dụng không?</li>
+                            </ul>
+                            <button onclick="toggleJournal('journal-3')" class="mt-4 text-sm font-semibold text-blue-500 hover:text-blue-700">
+                                Ghi Chú Cá Nhân 📝
+                            </button>
+                            <textarea id="journal-3" class="hidden w-full p-2 mt-2 border-2 border-blue-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm" rows="3" placeholder="Viết mô tả logic 'Nếu... Thì...' của nhóm em tại đây. Tiêu chí đánh giá là gì?"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIẾT 4: Tổng kết & Chia sẻ -->
+                <div id="tiet-4" class="bg-pink-50 p-6 rounded-2xl border-b-4 border-pink-500 card">
+                    <div class="flex items-start">
+                        <span class="step-icon bg-pink-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">4️⃣</span>
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-pink-700">Trạm 4: TỔNG KẾT & CHIA SẺ (Tiết 4)</h3>
+                            <p class="text-lg font-medium text-gray-600 mt-1">Mục tiêu: Báo cáo và phản ánh. 🥳</p>
+                            <ul class="list-inside list-disc mt-3 space-y-1 text-gray-700">
+                                <li><strong>Báo cáo:</strong> 🎤 Trình bày giải pháp trước lớp.</li>
+                                <li><strong>Tranh luận:</strong> 🤔 Giải thích tại sao nhóm chọn giải pháp này.</li>
+                                <li><strong>Góc Suy Ngẫm:</strong> 📚 Tổng hợp bài học và <strong>trích dẫn nguồn tham khảo</strong> (tên Chatbot, Web...).</li>
+                            </ul>
+                            <button onclick="toggleJournal('journal-4')" class="mt-4 text-sm font-semibold text-blue-500 hover:text-blue-700">
+                                Ghi Chú Cá Nhân 📝
+                            </button>
+                            <textarea id="journal-4" class="hidden w-full p-2 mt-2 border-2 border-pink-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 text-sm" rows="3" placeholder="Điều nhóm tự hào nhất? Nguồn tham khảo là gì?"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHÂN TRANG -->
+        <footer class="mt-10 pt-4 border-t-2 border-gray-200 text-center text-gray-500 text-sm italic">
+            Chúc các em học sinh Khối 5 hoàn thành dự án thật sáng tạo và hiệu quả!
+        </footer>
+    </div>
+
+    <!-- JavaScript để xử lý đóng mở phần ghi chú -->
+    <script>
+        function toggleJournal(id) {
+            const textarea = document.getElementById(id);
+            const button = textarea.previousElementSibling;
+            if (textarea.classList.contains('hidden')) {
+                textarea.classList.remove('hidden');
+                button.textContent = 'Ẩn Ghi Chú ⬆️';
+            } else {
+                textarea.classList.add('hidden');
+                button.textContent = 'Ghi Chú Cá Nhân 📝';
+            }
+        }
+    </script>
+</body>
+</html>
